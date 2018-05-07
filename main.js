@@ -101,18 +101,24 @@ biography(person);
 
 
 //////how to get the text of a specific element
-let topics = $('.topic').text();
-if (topics.includes('Event')) {
-  $('#output').text('Write less, do more!');
-  $('#output').css('font-size', '75');
-}
+// let topics = $('.topic').text();
+// if (topics.includes('Event')) {
+//   $('#output').text('Write less, do more!');
+//   $('#output').css('font-size', '75');
+// }
+
+// $('.topic').each(function(){
+  //   $(this).css('color', 'blue');
+  // });
+  
+// $('.topic').addClass('blue');
 
 
 //////getting the value of an input element
-$('#coffee').click(function() {
-  let coffeeShop = $('#bestCoffee').val();
-  $('#output').text(coffeeShop);
-});
+// $('#coffee').click(function() {
+//   let coffeeShop = $('#bestCoffee').val();
+//   $('#output').text(coffeeShop);
+// });
 
 
 
@@ -125,35 +131,39 @@ $('#coffee').click(function() {
 ////////////////////////////////////////
 
 
-
-
+  
+  
 
 ////////////EVENT LISTENERS/////////////
-$('#fun').change(function() {
-  $('#output2').html('<h1>Great!</h1>');
-});
+// $('#fun').change(function() {
+//   $('#output2').html('<h1>Great!</h1>');
+// });
 
 
-$('#color').dblclick(function() {
-  $('#color').css('backgroundColor', 'red');
-});
+// $('#color').dblclick(function() {
+//   $('#color').css('backgroundColor', 'red');
+// });
 
 
-$('#clickMe').click(function() {
-  $('#output3').html('<h1>Time for a Mini Challenge!</h1>');
-});
+// $('#clickMe').click(function() {
+//   $('#output3').html('<h1>Time for a Lightening Challenge!</h1>');
+// });
 
-
+  
 // $(window).scroll(function(){
-//   $('body').css('background-color', 'red').fadeOut('slow')
-//   $('body').css('background-color', 'white').fadeIn('slow')
-// })
+  //   $('body').css('background-color', 'red').fadeOut('slow')
+  //   $('body').css('background-color', 'white').fadeIn('slow')
+  // })
+  
+
 
 ///////////Event Delegation////////////
+// $('#para_2').append('<button class="submit">Submit</button>');
 
-
-
-
+// $('#para_2').on('click', 'button', function(){
+//   alert('I just clicked on the submit button!');
+// });
+  
 
 
 ////////////////////////////////////////
@@ -165,50 +175,49 @@ $('#clickMe').click(function() {
 
 
 
-
 //////////////Animations///////////////
 
-$('#sleepy').click(function() {
-  $('#sleepy').fadeOut('fast');
-});
+// $('#sleepy').click(function() {
+//   $('#sleepy').fadeOut('fast');
+// });
 
   
-$('#wakeUp').click(function() {
-  $('#wakeUp').animate(
-    {
-      fontSize: '+=50'
-    },
-    2000
-  );
-});
+// $('#wakeUp').click(function() {
+//   $('#wakeUp').animate(
+//     {
+//       fontSize: '+=50'
+//     },
+//     2000
+//   );
+// });
   
 
-$('#bee').click(function() {
-  animate();
-});
+// $('#bee').click(function() {
+//   animate();
+// });
   
 
-function animate() {
-  $('#bee').animate(
-    {
-      marginLeft: '100%',
-      width: '+=300',
-      opacity: 0
-    },
-    100,
-    function() {
-      $('#bee').animate(
-        {
-          marginLeft: 0,
-          width: '-=300',
-          opacity: 1
-        },
-        3000,
-        animate
-      );
-    }
-  );
-}
+// function animate() {
+//   $('#bee').animate(
+//     {
+//       marginLeft: '100%',
+//       width: '+=300',
+//       opacity: 0
+//     },
+//     100,
+//     function() {
+//       $('#bee').animate(
+//         {
+//           marginLeft: 0,
+//           width: '-=300',
+//           opacity: 1
+//         },
+//         3000,
+//         animate
+//       );
+//     }
+//   );
+// }
 
 
 ///////AJX and the jQuery CDN///////
